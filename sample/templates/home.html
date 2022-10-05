@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'ff.css' %}">
+
+<title>Menu</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-expand-md  navbar-dark fixed-top av">
+<div class="nab">
+<a class="navbar-brand" href="#">ThamilAlagaN</a>
+</div>
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+<ul class="navbar-nav ml-auto">
+
+<li class="nav-item">
+<a class="nav-link" id="n" href="#home">Home</i></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" id="n" href="#about">About</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" id="n" href="{% url 'skill' %}">Skills</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" id="n" href="#projects">Projects</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" id="n" href="#contact">Contact</a>
+</li> 
+
+</ul>
+</div>
+</nav>
+
+<!---Home--->
+<div id="home">
+<div id="bk">
+<div class="head">
+<div class="load">
+<h1 class="load"><span id="s">I'm </span><br><span style="color:chartreuse;">Thamil<span style="color:orange;">AlagaN</span></h1>
+</div>
+<h2>Full StacK Web <span> DevelopeR </span></h2>
+
+<br>
+
+<div id="ln">
+<a href="{% static 'R.Thamil.pdf' %}">My ResumE</a></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  $(document).ready(function(){
+    $("#ln").show(5000);
+  });
+</script>
+
+<!---About--->
+<div id="about" style="padding-top:70px;">
+<div class="jum">
+<div class="abt">
+<h1><i class='fa fa-angle-double-left' style='font-size:55px;padding-right:5px;'></i><span style="color:orange;">Abo</span>uT<i class='fa fa-angle-double-right' style='font-size:55px;padding-left:5px;'></i>
+</h1>
+</div>
+<div class="sect">
+<div class="circle">
+<img src="{% static 'img/th.jpg' %}">
+<div class="content">
+<h2>About Me</h2>
+<p>I am ThamilAlagaN, I am a Full Stack Web Developer and Looking forward to pursue the Full stack Web Developer, I am Passionate in Web Development and Web Designing.
+I have Various Skills in Web Development. I am able to Work on Front-End & Back-End Development. </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!------------PROJECTS--->
+
+<div id="projects" style="padding-top:70px;padding-bottom:70px; ">
+<h1>Projects</h1>
+<center>
+  <div id="demo" class="carousel slide c" data-ride="carousel" >
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner" >
+    <div class="carousel-item active" >
+      <img src="{% static 'img/port.png' %}" alt="Los Angeles" width="900" height="500">
+      <div class="carousel-caption">
+        <h6>Portfolio WebSite developed by using Front-End applications <br>& connected to the database by using Django.</h6>
+      </div>
+    
+    </div>
+    <div class="carousel-item" >
+      <img src="{% static 'img/1.jpg' %}" alt="Chicago" width="900" height="500">
+      <div class="carousel-caption">
+        <h6>Client-Side Website project developed by Front-End applications. </h6>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="{% static 'img/crud.jpg' %}" alt="New York" width="900" height="500">
+      <div class="carousel-caption">
+        <h6 style="color:black;">CRUD Operation developed by using Front-End applications <br>& connected to database using Back-End Django application. </h6>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev" id="">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next" id="">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</center>
+</div>
+
+
+<!--contact--->
+
+<div id="contact" style="padding-top:70px;padding-bottom: 30px;">
+
+<div class="cont">
+<h1><span style="color:orange;">-Con</span>tact-</h1>
+</div>
+<div class="row">
+<div class="col-sm-5">
+
+<div class="get">
+<h1>Get in touch...</h1>
+<p>Feel free to get in touch with me. I am always open to discussing new projects,creative ideas or oppurtunities to be part of you visions.</p>
+
+<div class="ic">
+<h2><i class="fa fa-address-book">Name:-</i></h2>
+<p>ThamilAlagaN</p></i><br>
+<h2><i class="fa fa-map-marker">Address:-</i></h2>
+<p>ABc,123 lane, India</p><br>
+<h2><i class="fa fa fa-envelope">Email:-</i></h2>
+<p>abc@gamil.com</p>
+</div>
+
+</div>
+</div>
+
+<div class="col-sm-4" id="colmn">
+<h1>Leave your Comments</h1>
+<div class="container">
+  <div class="container">
+  
+    <form class="form" id="form"  name="f1" onsubmit="return validate()" method="POST" action="add">
+    {% csrf_token %}
+
+     <div class="formcontrol">
+      <input type="text"  placeholder="Name" name="name">
+      <span id="fname"></span>
+    </div>
+
+    <div class="formcontrol">
+      <input type="email"  placeholder="Email" name="email">
+      <span id="mail"></span>
+
+    </div>
+
+    <div class="formcontrol">
+      <input type="number"  placeholder="Mobile Number" name="mobile">
+      <span id="mob"></span>
+
+    </div>
+
+    <div class="formcontrol">
+      <textarea rows="4" cols="15" placeholder="Your Comments" name="message"></textarea>
+    </div>
+
+    <button type="submit" class="b1">Submit</button>
+  </form>
+ </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<footer>
+<div class="row" style="justify-content:center;">
+<h6 id="i">
+<a id="face" href="https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C550525804938%7Cb%7Cfacebook%20%27%7C&placement=&creative=550525804938&keyword=facebook%20%27&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696220912%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-327195741349%26loc_physical_ms%3D1007810%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjwp9qZBhBkEiwAsYFsbwUTeoCCNCAU70fv3O7RlbIU7HsfDioYsxITeWF9Hr-niZFx1bIgyRoC7OAQAvD_BwE">
+<i class="fa fa-facebook" ></i></a>
+<a href="https://www.instagram.com/"> <i class="fa fa-instagram"></i></a>
+<a href="https://accounts.snapchat.com/accounts/login?continue=%2Faccounts%2Fwelcome"> <i class="fa fa-snapchat"></i></a>
+<a href="https://www.linkedin.com"> <i class="fa fa-linkedin"></i></a>
+<a href="https://github.com/"><i class="fa fa-github"></i></a>
+</h6>
+</div>
+
+<div id="ty">
+<h1>By<br> R.ThamilAlagaN</h1>
+</div>
+
+</footer>
+
+<script>
+function validate(){
+let name=document.f1.name.value;
+let email=document.f1.email.value;
+let mobile=document.f1.email.value;
+let status=false;
+
+if(name==""){
+  document.getElementById('fname').innerHTML="<span style='color:red;'><i class='fa fa-exclamation'></i>Please Enter Name</span>;"
+  status=false;
+}else{
+  document.getElementById('fname').innerHTML="<span style='color:chartreuse;'><i class='fa fa-check'></i> OK</span>;"
+  status=true;
+}
+if(email==""){
+  document.getElementById('mail').innerHTML="<span style='color:red;'><i class='fa fa-exclamation'></i> Please Enter Email ID </span>;"
+  status=false;
+}else if(!Email(email)){
+  document.getElementById('mail').innerHTML="<span style='color:red;'><i class='fa fa-exclamation'></i>Please Enter Valid Email ID </span>;"
+  status=false;
+}else{
+  document.getElementById('mail').innerHTML="<span style='color:chartreuse;'><i class='fa fa-check'></i> OK</span>";
+  status=true;
+}
+if(mobile==""){
+  document.getElementById('mob').innerHTML="<span style='color:red;'><i class='fa fa-exclamation'></i> Please Enter Mobile Number;</span>"
+  status=false;
+}else{
+  document.getElementById('mob').innerHTML="<span style='color:chartreuse;'><i class='fa fa-check'></i>OK</span>";
+}
+return status;
+}
+function Email(email){
+const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+return re.test(String(email).toLowerCase());
+}
+</script>
+
+</body>
+</html>
