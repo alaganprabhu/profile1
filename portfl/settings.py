@@ -111,6 +111,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = "static/"
+PROJECT_DIR = "/alaganprabhu/profile1/tree/main/sample/templates"
 STATIC_ROOT = "/alaganprabhu/profile1/tree/main/sample/static"
 
 # Default primary key field type
